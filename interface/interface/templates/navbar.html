@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Twitter for GSB</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="brand-name">TGSB</div>
+        <i class="toggle-button fa fa-2x fa-bars"></i>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Github</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <script src="{% static 'scripts.js' %}"></script> 
+    {% block content %}
+    {% endblock content %}
+</body>
+</html>
