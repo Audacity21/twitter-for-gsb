@@ -5,13 +5,15 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Fredoka', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: rgb(41,168,223);
     color: white;
 }
 
@@ -38,7 +40,7 @@ body {
 }
 
 .navbar-links li:hover {
-    background-color: #555;
+    background-color: rgb(39, 149, 234);
 }
 
 .toggle-button {
@@ -47,6 +49,95 @@ body {
     right: 1rem;
     cursor: pointer;
     display: none;
+}
+
+.footer {
+    position: fixed;
+    bottom: 10px;
+    width: 100vw;
+}
+
+
+.footer-text {
+    text-align: center;
+}
+
+
+.index-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.index-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.index-text {
+    width: 30%;
+    min-width: 300px;
+    font-size: 28px;
+}
+
+.index-text span {
+    position: relative;
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.index-logo {
+    width: 10%;
+    min-width: 100px;
+}
+
+.index-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.button-7 {
+  background-color: rgb(41,168,223);
+  border: 1px solid transparent;
+  border-radius: 3px;
+  box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.15385;
+  margin: 0;
+  outline: none;
+  padding: 8px .8em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.button-7:hover,
+.button-7:focus {
+  background-color: rgb(41,168,223);
+}
+
+.button-7:focus {
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+}
+
+.button-7:active {
+  background-color: rgb(41,168,223);
+  box-shadow: none;
 }
 
 @media (max-width: 400px) {

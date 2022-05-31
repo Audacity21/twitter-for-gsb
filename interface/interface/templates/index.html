@@ -7,10 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
 </head>
 <body>
     {% block content %}
-        <h3>Hello World!</h3>
+        <div class="index-container">
+            <div class="index-image">
+                <img class="index-logo" src="https://www.freepnglogos.com/uploads/twitter-logo-png/twitter-logo-vector-png-clipart-1.png" alt="logo" />
+            </div>
+            <div class="index-title">
+                <div class="index-text">
+                    This application allows you to tweet from a GUCCI smart belt. Login with your twitter account and start tweeting. Do not misuse the application.
+                </div>
+            </div>
+            <div class="index-button">
+                <button class="button-7" role="button">Login</button>
+            </div>
+        </div>
     {% endblock content %}
 </body>
 </html>
