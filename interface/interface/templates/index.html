@@ -13,6 +13,11 @@
     {% block content %}
         <div class="index-container">
             <div class="index-image">
+
+                {% for message in messages %}
+                {{ message }}
+                {% endfor %}
+
                 <img class="index-logo" src="https://www.freepnglogos.com/uploads/twitter-logo-png/twitter-logo-vector-png-clipart-1.png" alt="logo" />
             </div>
             <div class="index-title">
@@ -21,7 +26,7 @@
                 </div>
             </div>
             <div class="index-button">
-                <button class="button-7" role="button">Login</button>
+                <a class="button-7" role="button" href="/login">Login</a>
             </div>
         </div>
     {% endblock content %}
